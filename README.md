@@ -83,7 +83,7 @@ To simplify development, we strongly recommend leveraging the Isaac ROS Dev Dock
     ```
 
     ```bash
-    git clone https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_common
+    git clone https://github.com/yruoxi/isaac_ros_common
     ```
 
     ```bash
