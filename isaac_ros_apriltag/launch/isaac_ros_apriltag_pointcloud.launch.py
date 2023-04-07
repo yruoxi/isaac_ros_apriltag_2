@@ -31,7 +31,7 @@ def generate_launch_description():
             remappings=[
                 (
                     "/image",
-                    f"/cameras/{camera_name}/infra1/image_color",
+                    f"/cameras/{camera_name}/infra1/aruco_detect/ros2_images",
                 ),
                 (
                     "/camera_info",

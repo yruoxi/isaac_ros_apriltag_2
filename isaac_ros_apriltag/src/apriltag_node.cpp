@@ -89,7 +89,7 @@ const nitros::NitrosPublisherSubscriberConfigMap CONFIG_MAP = {
       .type = nitros::NitrosPublisherSubscriberType::NEGOTIATED,
       .qos = rclcpp::QoS(10),
       .compatible_data_format = INPUT_DEFAULT_TENSOR_FORMAT_CAM,
-      .topic_name = INPUT_TOPIC_NAME_CAM,
+      .topic_name = INPUT_TOPIC_NAME_CAM, //rclcpp::ParameterValue topic,
     }
   },
   {INPUT_COMPONENT_KEY_CAM_INFO,

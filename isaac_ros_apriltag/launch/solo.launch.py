@@ -22,7 +22,7 @@ from launch_ros.descriptions import ComposableNode
 
 def generate_launch_description():
     apriltag_node_list = []
-    for camera_name in ["fryer_left", "fryer_mid", "fryer_right"]:
+    for camera_name in ["fryer_mid"]:
         apriltag_node = ComposableNode(
             package="isaac_ros_apriltag",
             plugin="nvidia::isaac_ros::apriltag::AprilTagNode",
@@ -31,7 +31,7 @@ def generate_launch_description():
             remappings=[
                 (
                     "/image",
-                    f"/cameras/{camera_name}/infra1/image_color",
+                    f"/ros2_images",
                 ),
                 (
                     "/camera_info",
